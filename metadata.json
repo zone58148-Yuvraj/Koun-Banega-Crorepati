@@ -1,0 +1,6 @@
+{
+  "name": "Kaun Banega Crorepati",
+  "description": "Authentic Kaun Banega Crorepati (KBC) quiz show game clone featuring 17 questions up to ₹7 Crore, milestones, timer, realistic lifelines, voice speech, and live OpenTDB questions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "./styles/cheque.css";
+
+@layer base {
+  :root {
+    --kbc-bg: #050b18;
+  }
+
+  body {
+    background-color: #030712;
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+    user-select: none;
+  }
+}
+
+/* Custom KBC Hexagonal / Angular Box Shapes */
+.kbc-hex-box {
+  clip-path: polygon(14px 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0% 50%);
+}
+
+.kbc-hex-box-sm {
+  clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 50%, calc(100% - 8px) 100%, 8px 100%, 0% 50%);
+}
+
+/* KBC Diamond center radar decoration */
+.kbc-radial-bg {
+  background: radial-gradient(circle at center, rgba(30, 58, 138, 0.4) 0%, rgba(13, 27, 62, 0.8) 50%, rgba(3, 7, 18, 0.98) 100%);
+}
+
+/* Shimmer gold effect */
+.gold-shimmer {
+  background: linear-gradient(90deg, #f59e0b 0%, #fef08a 50%, #f59e0b 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Custom scrollbar for prize ladder */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.8);
+}
